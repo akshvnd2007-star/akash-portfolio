@@ -5,13 +5,11 @@ const cards = document.querySelectorAll(".card");
 
 function showCards() {
     cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-
-        if (cardTop < window.innerHeight) {
-            card.classList.add("show");
-        }
+        card.classList.add("show");  // force show all
     });
 }
+
+window.addEventListener("load", showCards);
 
 // Run on load
 window.addEventListener("load", showCards);
