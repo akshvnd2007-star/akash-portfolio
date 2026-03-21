@@ -14,10 +14,6 @@ body {
     color: white;
 }
 /* Light mode */
-body.light {
-    background: #f5f5f5;
-    color: black;
-}
 
 /* Header */
 header {
