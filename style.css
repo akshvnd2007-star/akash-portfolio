@@ -7,17 +7,16 @@
 }
 
 body {
-    background: #0f172a;   /* dark blue */
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
     color: #ffffff;
+    line-height: 1.6;
 }
 
-background: linear-gradient(to right, #141e30, #243b55);
 /* Header */
 header {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(10px);
 }
 
 /* Navbar */
@@ -41,11 +40,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-nav a.active {
-    background: #00c6ff;
-    color: black;
-    border-radius: 5px;
-}
 /* Section */
 section {
     max-width: 1000px;
@@ -53,44 +47,29 @@ section {
     padding: 40px 20px;
 }
 
-/* Glass Cards */
+/* Cards */
 .card {
     background: rgba(255,255,255,0.1);
     padding: 20px;
     margin-top: 20px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
-    transition: 0.4s;
     border: 1px solid rgba(255,255,255,0.2);
-
-    opacity: 1;          /* FORCE visible */
-    transform: none;
 }
 
-.card:hover {
-    box-shadow: 0 0 20px #00c6ff;
-}
-
-
-/* Profile Image */
+/* Profile */
 .profile {
     display: block;
     margin: 20px auto;
-    width: 150px;
+    width: 140px;
     border-radius: 50%;
     border: 3px solid #00c6ff;
 }
 
-/* Certificate & project images */
+/* Images */
 .cert-img {
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
-    transition: 0.3s;
-}
-
-.cert-img:hover {
-    transform: scale(1.05);
 }
 
 /* Grid */
@@ -100,7 +79,7 @@ section {
     gap: 20px;
 }
 
-/* Buttons */
+/* Button */
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -111,32 +90,16 @@ section {
     margin-top: 10px;
 }
 
-/* Skill bars */
-.bar {
-    width: 100%;
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-.fill {
-    height: 10px;
-    background: #00c6ff;
-    border-radius: 10px;
-}
-
 /* Footer */
 footer {
     text-align: center;
     padding: 15px;
     background: rgba(0,0,0,0.5);
-    margin-top: 20px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        text-align: center;
     }
 }
