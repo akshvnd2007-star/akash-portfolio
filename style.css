@@ -3,106 +3,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
     background: linear-gradient(to right, #0f172a, #1e3a8a);
-    color: #ffffff;
-    line-height: 1.6;
-    opacity: 0;
-    transition: 1s;
-}
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 25px;
-    background: rgba(0,0,0,0.4);
+    padding: 20px;
 }
 
 /* Navbar */
 nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: rgba(255,255,255,0.1);
+    text-align: center;
+    margin: 10px;
 }
 
 nav a {
-    padding: 12px 18px;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
     color: white;
     text-decoration: none;
-    transition: 0.3s;
+    border: 1px solid white;
 }
 
 nav a:hover {
     background: #00c6ff;
     color: black;
-    border-radius: 5px;
 }
 
 /* Section */
 section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
-/* Cards */
+/* Card */
 .card {
     background: rgba(255,255,255,0.1);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-/* Profile */
-.profile {
-    display: block;
-    margin: 20px auto;
-    width: 140px;
-    border-radius: 50%;
-    border: 3px solid #00c6ff;
-}
-
-/* Images */
-.cert-img {
-    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
     border-radius: 10px;
-    margin-top: 10px;
 }
 
-/* Grid */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+/* Image */
+.profile {
+    width: 120px;
+    display: block;
+    margin: auto;
 }
 
 /* Button */
 .btn {
-    display: inline-block;
-    padding: 10px 15px;
+    padding: 10px;
     background: #00c6ff;
     color: black;
-    border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
     margin-top: 10px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background: rgba(0,0,0,0.5);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
 }
