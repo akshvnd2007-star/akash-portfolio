@@ -65,14 +65,8 @@ section {
     transition: 0.4s;
     border: 1px solid rgba(255,255,255,0.2);
 
-    /* animation safe */
-    opacity: 1;
-    transform: translateY(30px);
-}
-
-.card.show {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1;          /* FORCE visible */
+    transform: none;
 }
 
 .card:hover {
