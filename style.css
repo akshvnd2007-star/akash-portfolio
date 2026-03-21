@@ -1,0 +1,147 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+/* Particles */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.1);
+}
+
+nav a {
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #00c6ff;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Section */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Glass Cards */
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+    opacity: 0;
+    transform: translateY(30px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Profile Image */
+.profile {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #00c6ff;
+}
+
+/* Certificate & project images */
+.cert-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #00c6ff;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Skill bars */
+.bar {
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.fill {
+    height: 10px;
+    background: #00c6ff;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
