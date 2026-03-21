@@ -48,6 +48,11 @@ nav a:hover {
     border-radius: 5px;
 }
 
+nav a.active {
+    background: #00c6ff;
+    color: black;
+    border-radius: 5px;
+}
 /* Section */
 section {
     max-width: 1000px;
@@ -70,7 +75,7 @@ section {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 0 20px #00c6ff;
 }
 
 
