@@ -67,7 +67,7 @@ section {
 }
 
 .card.show {
-    opacity: 1;
+    opacity: 2;
     transform: translateY(0);
 }
 
