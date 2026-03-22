@@ -148,6 +148,18 @@ section {
 .cert-img:hover {
     transform: scale(1.05);
 }
+.bar {
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.fill {
+    height: 10px;
+    background: #00c6ff;
+    border-radius: 10px;
+}
 
 /* Footer */
 footer {
