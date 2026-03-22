@@ -1,4 +1,7 @@
 /* Reset */
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -31,23 +34,27 @@ header {
     padding: 20px;
 }
 
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: rgba(255,255,255,0.1);
-}
-
 nav a {
-    padding: 12px;
+    padding: 12px 18px;
     color: white;
     text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-nav a:hover {
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
     background: #00c6ff;
-    color: black;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 /* Mobile Menu */
@@ -71,18 +78,18 @@ section {
     padding: 20px;
     margin: 20px 0;
     border-radius: 15px;
-    transition: 0.3s;
-    opacity: 0;
-    transform: translateY(20px);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,198,255,0.5);
 }
 
 .card.show {
     opacity: 2;
     transform: translateY(0);
-}
-
-.card:hover {
-    transform: scale(1.03);
 }
 
 /* Images */
@@ -108,12 +115,18 @@ section {
 /* Button */
 .btn {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 15px;
     background: #00c6ff;
     color: black;
+    border-radius: 5px;
     text-decoration: none;
     margin-top: 10px;
-    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00c6ff;
 }
 
 /* Toggle button */
@@ -124,6 +137,16 @@ section {
     background: #00c6ff;
     padding: 8px;
     cursor: pointer;
+}
+
+.cert-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
